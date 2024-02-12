@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/images/social.png">
+  <link rel="stylesheet" href="resources/css/style.css" id="theme-link">
+  
+  <title>Social Media Dashboard</title>
+</head>
+<body class="dark-theme || light-theme">
+<div class="left">
+  <div class="cardleft" style="height: 90%; 
+  width: 80%; 
+  background-color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;"> 
+    <div class="ButtonBar">
+      <ul style="padding-left: 0px;">
+        <li class="abovechart dashboard">OVERVIEW</li>
+      </ul>
+      </div>
+  <div class="chart">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="doughnut" width="80%" height="20%">
+    <script src="./resources/js/chartdoughnut.js">
+    </script>
+  </div>
+  <div class="total" 
+  style="display: flex; justify-content: center; align-items: center;">
+    <h3>Total Followers: 15000</h3>
+  </div>
+  <div class="blank" style="height: 25%;"></div>
+  <div style="display: flex; justify-content: center; align-items: center; 
+  font-size: x-large; margin: 20px; font-weight:900; color: rgb(124, 123, 123);">
+    Logged as vishalmishra4991</div>
+  <div class="ButtonBar">
+    <ul style="padding-left: 0px;">
+      <li class="nav-item dashboard">Dashboard</li>
+      <li class="nav-item logout">Logout</li>
+      <li class="nav-item settings">Settings</li>
+    </ul>
+  </div>
+  </div>
+</div>
+<div class="right" >
+  <header class="dark-theme || light-theme">
+    <div class="header-wrapper">
+      <div class="title-followers">
+        <h1 style="font-size: 70px; margin-top: 0; margin-bottom: 0;">Social Media Dashboard 📈</h1>
+        <h3 style="font-size: large; margin-left: 10px;">for Content Creator</h3>
+      </div>
+      <hr>
+    </div>
+  </header>
+  <div class="kpi-wrapper">
+    <div class="kpi-card" style="border-radius: 30px;
+    color: aliceblue !important;
+    background: url('./resources/images/kpiyt.jpg') center/cover no-repeat;">
+      <!-- <div class="card-top-facebook"></div> -->
+      <div class="kpi-card-top">
+        <div class="icon"><img src="https://freelogopng.com/images/all_img/1656504144youtube-logo-png-white.png" alt="facebook"></div>
+        <div class="handle" style="color: #FFF !important;"><p style="color: #FFF !important;">vishalmishra4991</p></div>
+      </div>
+      <div class="kpi">140</div>
+      <div><h2 class="unit-of-measure" style="font-weight: bolder;">FOLLOWERS</h2></div>
+      <div><p class="delta up">&#9652; +10 Today</p></div>
+    </div>
+    <div class="kpi-card" style="border-radius: 30px;
+    color: aliceblue !important;
+    background: url('./resources/images/kpitt.jpg') center/cover no-repeat;
+">
+      <!-- <div class="card-top-facebook"></div> -->
+      <div class="kpi-card-top" style="display: flex; justify-content: center; align-items: center;">
+        <div class="icon"><img src="
+          https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tiktok-round-white-icon.png
+          " alt="facebook"></div>
+        <div class="handle" style="color: #FFF !important;"><p style="color: #FFF !important;">TikTok @vishalmis</p></div>
+      </div>
+      <div class="kpi" style="color: #FFF !important;">500</div>
+      <div><h2 class="unit-of-measure" style="font-weight: bolder;">FOLLOWERS</h2></div>
+      <div><p class="delta up">&#9652; +100 Today</p></div>
+    </div>
+    <div class="kpi-card" style="border-radius: 30px;
+    color: aliceblue !important;
+    background: url('./resources/images/kpiig.jpg') center/cover no-repeat;">
+      <!-- <div class="card-top-facebook"></div> -->
+      <div class="kpi-card-top">
+        <div class="icon"><img src="
+          https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" alt="facebook"></div>
+        <div class="handle" style="color: #FFF !important;"><p style="color: #FFF !important;">@vishalmishra4949</p></div>
+      </div>
+      <div class="kpi" style="color: #FFF !important;">1000</div>
+      <div><h2 class="unit-of-measure" style="font-weight: bolder;">FOLLOWERS</h2></div>
+      <div><p class="delta up">&#9652; +100 Today</p></div>
+    </div>
+  </div>
+  <div class="overview-header">
+    <h2 style="color: black !important;">Overview - today</h2>
+  </div>
+  <div class="overview-kpis">
+    <div class="overview-wrapper">
+      <div class="kpi-small">
+        <div class="page-views">Views</div>
+        <div class="logo"><img src="https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png" alt="facebook"></div>
+        <div class="views">50</div>
+        <div class="movement upgreen">&#9652; 8%</div>
+      </div>
+      <div class="kpi-small">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="https://seeklogo.com/images/T/tiktok-logo-1F4A5DCD45-seeklogo.com.png" alt="facebook"></div>
+        <div class="views">100</div>
+        <div class="movement down">&#9662; 5%</div>
+      </div>
+      <div class="kpi-small">
+        <div class="page-views">Profile Views</div>
+        <div class="logo"><img src="resources/images/icon-instagram.svg" alt="instagram"></div>
+        <div class="views">200</div>
+        <div class="movement upgreen">&#9652; 50%</div>
+      </div>
+      <div class="kpi-small">
+        <div class="page-views">Post Likes</div>
+        <div class="logo"><img src="resources/images/icon-instagram.svg" alt="instagram"></div>
+        <div class="views">1000</div>
+        <div class="movement upgreen">&#9652; 80%</div>
+      </div>
+      <div class="kpi-small">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="resources/images/icon-youtube.svg" alt="youtube"></div>
+        <div class="views">500</div>
+        <div class="movement down">&#9662; 20%</div>
+      </div>
+      <div class="kpi-small">
+        <div class="page-views">Total Views</div>
+        <div class="logo"><img src="resources/images/icon-youtube.svg" alt="youtube"></div>
+        <div class="views">1850</div>
+        <div class="movement down">&#9662; 30           ````````                ```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````%</div>
+  </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="resources/js/darkmodetoggle.js"></script> 
+</html>
