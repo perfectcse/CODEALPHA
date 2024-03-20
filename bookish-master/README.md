@@ -33,21 +33,15 @@ Before you begin, ensure you have met the following requirements:
 
 To run **Bookish** locally, run this command on your git bash:
 
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/bookish.git
-```
-
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/bookish.git
+
+git clone https://github.com/perfectcse/CODEALPHA.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
 ### License
 
