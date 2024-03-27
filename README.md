@@ -21,3 +21,7 @@ project- 4
 Project-5 
 *Book Library
 *Growfunding platform
+
+project-6 
+*E-commerce Web
+*Smart-home automation system
