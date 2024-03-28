@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Home Automation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .device {
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .on {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .off {
+        background-color: #f44336;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Smart Home Automation</h1>
+    <div class="device">
+        <h2>Kitchen Light</h2>
+        <button id="kitchen-light-on" onclick="turnOn('kitchen-light')">Turn On</button>
+        <button id="kitchen-light-off" onclick="turnOff('kitchen-light')">Turn Off</button>
+    </div>
+    <div class="device">
+        <h2>Living Room Light</h2>
+        <button id="living-room-light-on" onclick="turnOn('living-room-light')">Turn On</button>
+        <button id="living-room-light-off" onclick="turnOff('living-room-light')">Turn Off</button>
+    </div>
+    <div class="device">
+        <h2>Thermostat</h2>
+        <label for="temperature">Set Temperature:</label>
+        <input type="number" id="temperature" value="20">
+        <button onclick="setTemperature()">Set</button>
+    </div>
+</div>
+<script>
+    function turnOn(device) {
+        document.getElementById(device + '-on').classList.add('on');
+        document.getElementById(device + '-off').classList.remove('on');
+        // Here you can add logic to send a request to turn on the device
+        console.log(device + ' turned on.');
+    }
+
+    function turnOff(device) {
+        document.getElementById(device + '-off').classList.add('on');
+        document.getElementById(device + '-on').classList.remove('on');
+        // Here you can add logic to send a request to turn off the device
+        console.log(device + ' turned off.');
+    }
+
+    function setTemperature() {
+        var temperature = document.getElementById('temperature').value;
+        // Here you can add logic to send a request to set the thermostat temperature
+        console.log('Thermostat temperature set to ' + temperature + '°C.');
+    }
+</script>
+</body>
+</html>
